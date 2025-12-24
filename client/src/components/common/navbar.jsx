@@ -23,7 +23,7 @@ export function Navbar() {
             to="/"
             className="flex items-center gap-2 text-xl font-bold text-foreground no-underline"
           >
-            <div className="flex size-9 items-center justify-center rounded-lg bg-primary">
+            <div className="flex size-9 items-center justify-center rounded-lg bg-primary text-white">
               <GraduationCap className="size-5 text-primary-foreground" />
             </div>
             <span>EduX</span>

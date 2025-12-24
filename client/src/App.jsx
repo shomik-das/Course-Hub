@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage';
-// import Courses from './pages/CoursesPage';
-// import Course from './pages/CoursePage';
+import CoursesPage from './pages/CoursesPage';
+import CourseDetailPage from './pages/CourseDetailPage';
 import { Navbar } from './components/common/navbar';
 import './App.css';
 
@@ -12,9 +12,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/courses" element={<Courses />} />
-        <Route path="/courses/:id" element={<Course />} /> */}
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/courses/:id" element={<CourseDetailPage />} />
       </Routes>
+      <Footer />
     </>
   );
 };

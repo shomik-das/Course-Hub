@@ -3,8 +3,10 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { useNavigate } from "react-router-dom"
 
 export function CourseCard({
+  id,
   title,
   instructor,
   category,
@@ -15,10 +17,13 @@ export function CourseCard({
   imageUrl,
   className,
 }) {
+  const navigate = useNavigate()
+
   return (
     <Card
+      onClick={() => navigate(`/courses/${id}`)}
       className={cn(
-        "group overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
+        "group cursor-pointer overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
         className
       )}
     >
@@ -31,7 +36,7 @@ export function CourseCard({
         />
       </div>
 
-      <div className="flex flex-col gap-2 p-5">
+      <div className="flex flex-col gap-2 p-4">
         {/* Category badge */}
         <Badge variant="secondary" className="w-fit bg-accent text-accent-foreground">
           {category}
@@ -58,14 +63,18 @@ export function CourseCard({
         </div>
 
         {/* Price and CTA */}
-        <div className="flex items-center justify-between pt-2 border-t border-border">
+        <div
+          className="flex items-center justify-between pt-2 border-t border-border"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="text-lg font-bold text-foreground">
             {isFree ? (
-              <Badge className="text-white py-1">Free</Badge>
+              <Badge className="py-1 text-white">Free</Badge>
             ) : (
               price
             )}
           </div>
+
           <Button size="sm" variant="outline">
             View More
           </Button>
