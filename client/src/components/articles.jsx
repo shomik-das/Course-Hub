@@ -61,7 +61,7 @@ const articles = [
 
 export function LatestArticles() {
   return (
-    <section className="bg-background py-16 sm:py-20 lg:py-24">
+    <section className="bg-background pt-0 pb-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">

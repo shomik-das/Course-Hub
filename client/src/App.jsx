@@ -1,18 +1,19 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage';
-// import ScrollToTop from './components/common/ScrollToTop';
-// import MyRoom from './pages/MyRoomPage';
+// import Courses from './pages/CoursesPage';
+// import Course from './pages/CoursePage';
+import { Navbar } from './components/common/navbar';
 import './App.css';
 
 const App = () => {
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/my-room" element={<MyRoom />} /> */}
-        <Route path="*" element={<Home />} />
+        {/* <Route path="/courses" element={<Courses />} />
+        <Route path="/courses/:id" element={<Course />} /> */}
       </Routes>
     </>
   );
