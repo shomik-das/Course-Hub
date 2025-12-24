@@ -18,7 +18,7 @@ export function InformationalBlock() {
               Learn at Your Own Pace With Industry-Relevant Skills
             </h2>
 
-            <p className="text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="text-pretty text-base leading-relaxed text-gray-500 md:text-lg">
               Our platform is designed to help learners grow through structured courses, hands-on projects, and expert
               guidance. Whether you're starting your journey or advancing your career, we provide the tools and support
               you need to succeed.

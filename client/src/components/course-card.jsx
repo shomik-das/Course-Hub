@@ -48,10 +48,10 @@ export function CourseCard({
         </h3>
 
         {/* Instructor */}
-        <p className="text-sm text-muted-foreground">By {instructor}</p>
+        <p className="text-sm text-gray-500">By {instructor}</p>
 
         {/* Meta information */}
-        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+        <div className="flex items-center gap-4 text-sm text-gray-500">
           <div className="flex items-center gap-1.5">
             <Clock className="size-4" />
             <span>{duration}</span>
@@ -64,7 +64,7 @@ export function CourseCard({
 
         {/* Price and CTA */}
         <div
-          className="flex items-center justify-between pt-2 border-t border-border"
+          className="flex items-center justify-between pt-2 border-t border-black/12"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="text-lg font-bold text-foreground">

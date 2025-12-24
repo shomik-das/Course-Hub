@@ -88,10 +88,10 @@ export default function WallOfLoveSection() {
                                             <div>
                                                 <h3 className="font-medium">{name}</h3>
 
-                                                <span className="text-muted-foreground block text-sm tracking-wide">{role}</span>
+                                                <span className="text-gray-500 block text-sm tracking-wide">{role}</span>
 
                                                 <blockquote className="mt-3">
-                                                    <p className="text-gray-700 dark:text-gray-300">{quote}</p>
+                                                    <p className="text-gray-500 dark:text-gray-300">{quote}</p>
                                                 </blockquote>
                                             </div>
                                         </CardContent>

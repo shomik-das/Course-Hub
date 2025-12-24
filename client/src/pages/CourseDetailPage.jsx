@@ -51,7 +51,7 @@ export default function CourseDetailPage() {
       <div className="flex min-h-screen items-center justify-center bg-background">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Course Not Found</h1>
-          <p className="text-muted-foreground">
+          <p className="text-gray-500">
             The course you're looking for doesn't exist.
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function CourseDetailPage() {
                 {course.title}
               </h1>
 
-              <p className="mb-6 text-lg text-muted-foreground">
+              <p className="mb-6 text-lg text-gray-500">
                 {course.description || "Learn from industry experts."}
               </p>
 
-              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap gap-4 text-sm text-gray-500">
                 <div className="flex items-center gap-2">
                   <Clock className="size-4" />
                   {course.duration}
@@ -102,7 +102,7 @@ export default function CourseDetailPage() {
               </div>
 
               <div className="mt-6">
-                <span className="text-sm text-muted-foreground">Instructor: </span>
+                <span className="text-sm text-gray-500">Instructor: </span>
                 <span className="font-medium">{course.instructor}</span>
               </div>
             </div>
@@ -176,7 +176,7 @@ export default function CourseDetailPage() {
                   "border-b-2 px-1 py-4 text-sm font-medium",
                   activeTab === tab.id
                     ? "border-primary text-primary"
-                    : "border-transparent text-muted-foreground hover:text-foreground"
+                    : "border-transparent text-gray-500 hover:text-foreground"
                 )}
               >
                 {tab.label}
@@ -208,7 +208,7 @@ export default function CourseDetailPage() {
                     <AccordionTrigger className="px-6 py-4 hover:no-underline">
                       <div className="flex w-full justify-between">
                         <span className="font-semibold">{module.title}</span>
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm text-gray-500">
                           {module.lessons.length} lessons
                         </span>
                       </div>
@@ -222,10 +222,10 @@ export default function CourseDetailPage() {
                             className="flex items-center justify-between rounded-md px-4 py-3 hover:bg-accent/50"
                           >
                             <div className="flex items-center gap-3">
-                              <Play className="size-4 text-muted-foreground" />
+                              <Play className="size-4 text-gray-500" />
                               <span>{lesson.title}</span>
                             </div>
-                            <span className="text-sm text-muted-foreground">
+                            <span className="text-sm text-gray-500">
                               {lesson.duration}
                             </span>
                           </li>

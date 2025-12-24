@@ -72,7 +72,7 @@ export function LatestArticles() {
             <h2 className="text-3xl font-bold leading-tight text-balance text-foreground md:text-5xl">
               Insights & Resources From Our Blog
             </h2>
-            <p className="text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-gray-500 max-w-2xl leading-relaxed">
               Stay updated with the latest trends, tips, and learning strategies.
             </p>
           </div>

@@ -21,7 +21,7 @@ export function BlogCard({ title, category, publishDate, excerpt, imageUrl }) {
             {category}
           </Badge>
 
-          <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+          <div className="flex items-center gap-1.5 text-xs text-gray-500">
             <Calendar className="size-3.5" />
             <span>{publishDate}</span>
           </div>
@@ -31,7 +31,7 @@ export function BlogCard({ title, category, publishDate, excerpt, imageUrl }) {
           {title}
         </h3>
 
-        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+        <p className="mb-4 line-clamp-3 text-sm leading-relaxed text-gray-500">
           {excerpt}
         </p>
 

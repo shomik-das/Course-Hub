@@ -14,7 +14,7 @@ export function AcademyCta() {
                 Start Your Learning Journey With Academy LMS
               </h2>
 
-              <p className="text-base text-muted-foreground text-balance md:text-lg">
+              <p className="text-base text-gray-500 text-balance md:text-lg">
                 Whether you want to learn new skills or share your expertise, Academy LMS gives you the tools to succeed.
               </p>
             </div>

@@ -24,7 +24,7 @@ export default function CoursesPage() {
           <h1 className="text-3xl font-bold text-foreground lg:text-4xl">
             All Courses
           </h1>
-          <p className="mt-2 text-muted-foreground">
+          <p className="mt-2 text-gray-500">
             Explore our extensive library of courses and start learning today.
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function CoursesPage() {
                 </div>
 
                 {/* Price */}
-                <div className="border-t pt-6">
+                <div className="border-t border-black/12 pt-6">
                   <h5 className="mb-3 font-semibold text-foreground">Price</h5>
                   <div className="space-y-2">
                     {priceOptions.map((option) => (
@@ -73,7 +73,7 @@ export default function CoursesPage() {
                 </div>
 
                 {/* Level */}
-                <div className="border-t pt-6">
+                <div className="border-t border-black/12 pt-6">
                   <h5 className="mb-3 font-semibold text-foreground">Level</h5>
                   <div className="space-y-2">
                     {levelOptions.map((level) => (
@@ -99,7 +99,7 @@ export default function CoursesPage() {
 
             {/* Top Bar */}
             <div className="mb-6 flex items-center justify-between">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-gray-500">
                 Showing <span className="font-medium text-foreground">{courses.length}</span> courses
               </p>
 

@@ -4,6 +4,7 @@ import Home from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import { Navbar } from './components/common/navbar';
+import { Footer } from './components/common/footer';
 import './App.css';
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/courses/:id" element={<CourseDetailPage />} />
+        <Route path="*" element={<div className="p-8 text-center">404 - Page Not Found</div>} />
       </Routes>
       <Footer />
     </>

@@ -60,7 +60,7 @@ export function CategoriesSection() {
             <h2 className="text-3xl md:text-5xl font-bold text-foreground text-balance">
               Explore Popular Course Categories
             </h2>
-            <p className="text-base text-muted-foreground max-w-2xl text-pretty leading-relaxed">
+            <p className="text-base text-gray-500 max-w-2xl text-pretty leading-relaxed">
               Choose from a wide range of subjects designed to help you build in-demand skills.
             </p>
           </div>
@@ -89,7 +89,7 @@ export function CategoriesSection() {
                 <h3 className="text-sm font-semibold text-foreground text-center">{category.name}</h3>
 
                 {/* Course Count */}
-                <p className="text-xs text-muted-foreground">{category.courses} Courses</p>
+                <p className="text-xs text-gray-500">{category.courses} Courses</p>
               </div>
             )
           })}

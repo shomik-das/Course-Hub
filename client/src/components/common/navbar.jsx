@@ -4,17 +4,16 @@ import { GraduationCap, Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/courses", label: "Courses" },
-  { to: "#", label: "About" },
-  { to: "#", label: "Blog" },
+  { to: "/", label: "Home", active: true },
+  { to: "/courses", label: "Courses", active: true },
 ]
+
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm">
+    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm ">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
 
@@ -39,8 +38,8 @@ export function Navbar() {
                   `
                   text-sm text-gray-500 font-medium no-underline transition-colors duration-200 
                   ${isActive
-                    ? "text-foreground text-black"
-                    : "text-muted-foreground hover:text-foreground"}
+                    ? "text-foreground text-blue-500"
+                    : "text-gray-500 hover:text-foreground"}
                 `
                 }
               >
@@ -75,7 +74,7 @@ export function Navbar() {
                 <NavLink
                   key={link.label}
                   to={link.to}
-                  className="text-sm font-medium text-muted-foreground no-underline transition-colors hover:text-foreground"
+                  className="text-sm font-medium text-gray-500 no-underline transition-colors hover:text-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}

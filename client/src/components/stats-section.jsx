@@ -40,7 +40,7 @@ export function StatsSection() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="text-3xl font-bold text-foreground">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  <p className="text-sm text-gray-500">{stat.label}</p>
                 </div>
               </div>
             )

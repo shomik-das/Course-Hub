@@ -83,7 +83,7 @@ export function FeaturedSection() {
             <h2 className="text-3xl font-bold leading-tight text-balance text-foreground md:text-5xl">
               Explore Our Popular Courses
             </h2>
-            <p className="text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="text-gray-500 max-w-2xl leading-relaxed">
               Learn from industry experts and gain practical, job-ready skills.
             </p>
           </div>

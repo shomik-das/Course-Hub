@@ -59,7 +59,7 @@ export function StudentFeedback() {
           <h2 className="text-3xl font-bold leading-tight text-foreground md:text-5xl text-balance">
             What Our Students Say
           </h2>
-          <p className="text-muted-foreground max-w-2xl text-pretty">
+          <p className="text-gray-500 max-w-2xl text-pretty">
             Hear from learners who have transformed their careers with our courses.
           </p>
         </div>
