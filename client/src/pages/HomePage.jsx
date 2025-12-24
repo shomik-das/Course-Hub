@@ -7,8 +7,8 @@ import { FeaturedSection } from '@/components/featured-section.jsx';
 import { StatsSection } from '@/components/stats-section.jsx';
 import { PromotionalBanner } from '@/components/promotional-banner.jsx';
 import { InformationalBlock } from '@/components/informational-block.jsx';
-import WallOfLoveSection from '../components/wallOfLove-section.jsx';
 import { StudentFeedback } from '@/components/student-feedback.jsx';
+import { AcademyCta } from '@/components/academy-cta.jsx';
 // import Navbar from '../components/common/Navbar';
 // import Footer from '../components/common/Footer';
 
@@ -24,6 +24,7 @@ const Home = () => {
     <StatsSection />
     <InformationalBlock />
     <StudentFeedback />
+    <AcademyCta />
     </>
   );
 };

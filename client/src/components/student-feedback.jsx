@@ -49,7 +49,7 @@ const testimonials = [
 
 export function StudentFeedback() {
   return (
-    <section className="w-full bg-gray-50 pt-0 pb-16">
+    <section className="w-full bg-gray-50 pt-0 pb-24">
       <div className="mx-auto max-w-6xl px-6">
         {/* Section header */}
         <div className="mb-12 flex flex-col gap-3">
