@@ -9,6 +9,7 @@ import { PromotionalBanner } from '@/components/promotional-banner.jsx';
 import { InformationalBlock } from '@/components/informational-block.jsx';
 import { StudentFeedback } from '@/components/student-feedback.jsx';
 import { AcademyCta } from '@/components/academy-cta.jsx';
+import { LatestArticles } from '@/components/articles.jsx';
 // import Navbar from '../components/common/Navbar';
 // import Footer from '../components/common/Footer';
 
@@ -25,6 +26,7 @@ const Home = () => {
     <InformationalBlock />
     <StudentFeedback />
     <AcademyCta />
+    <LatestArticles />
     </>
   );
 };
