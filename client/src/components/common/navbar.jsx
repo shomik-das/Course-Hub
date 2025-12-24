@@ -13,7 +13,7 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-sm ">
+    <nav className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-md shadow-sm ">
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex h-16 items-center justify-between">
 
