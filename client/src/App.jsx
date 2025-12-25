@@ -5,11 +5,13 @@ import CoursesPage from './pages/CoursesPage';
 import CourseDetailPage from './pages/CourseDetailPage';
 import { Navbar } from './components/common/navbar';
 import { Footer } from './components/common/footer';
+import ScrollToTop from './components/common/scroll-to-top';
 import './App.css';
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
